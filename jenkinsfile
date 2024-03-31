@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('NP install') {
+            steps {
+                echo 'npm install'
+            }
+        }
+    }
+}
