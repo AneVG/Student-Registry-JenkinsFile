@@ -2,9 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('NPM install') {
+        stage('NPM Install') {
             steps {
                 echo 'npm install'
+            }
+        }
+         stage('NPM Audit') {
+            steps {
+                echo 'npm audit'
+            }
+        }
+         stage('NPM Integration tests') {
+            steps {
+                echo 'npm run test'
             }
         }
     }
